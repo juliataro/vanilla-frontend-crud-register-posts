@@ -24,7 +24,7 @@ export class PopularTagsComponent extends HTMLElement {
     popularTags() {
         let tagList = this.querySelector('#tagList');
 
-        fetch('https://juliataro.eu:8080/api/tags').then(function (response) {
+        fetch('https://juliataro.eu:3000/api/tags').then(function (response) {
             return response.json();
         }).then(r => {
                 while (tagList.firstChild) {

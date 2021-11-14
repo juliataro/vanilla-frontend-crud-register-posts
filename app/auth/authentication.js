@@ -30,7 +30,7 @@ export class Authentication {
             }
         };
         return new Promise((resolve, reject) => {
-            fetch('https://juliataro.eu:8080/api/users/login', {
+            fetch('https://juliataro.eu:3000/api/users/login', {
                 method: 'post',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
